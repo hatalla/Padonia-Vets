@@ -1,0 +1,73 @@
+1.1 (03/28/14)
+	*Updated Drupal Core in full install.
+  *Better fix for latest posts and popular posts view blocks.
+  *Fixed bug with detail boxes and custom theme color.
+  *Added post meta theme setting conditionals to latest posts view template.
+  *Implemented custom node pagination function.
+  *Temporary fix for Chrome Google Font caching bug.
+
+1.0.9 (01/04/14)
+  *Updated Drupal Core in full install.
+  *Fixed JS related bugs.
+  *Fixed issue with latest posts view block.
+  *Removed testing field in Detail Boxes content type.
+
+1.0.8 (12/9/13)
+  *Fixed issue with sticky navigation option.
+  *Updated Drupal Core in full install to latest version.
+  *Updated Mega Slider to latest version.
+  *Fixed issue with links not working inside tabs element.
+  *Fixed issue with body field wrappers.
+
+1.0.7 (11/19/13)
+  *Fixed issue with pager on Portfolio view block.
+  *Renamed several view node templates to fix issue with adding additional displays.
+  *Removed unecessary "active" field option in FAQ content type.
+  *New theme function to update Drupal's version of jQuery to remove need for jQuery Update module.
+  *Fixed slider issue when disabling black and white effect.
+
+1.0.6 (11/11/13)
+  *Fixed additional issues with custom color in FireFox browser.
+  *Fixed issue with "After Content" region not displaying properly on certain pages.
+  *"About the author" section will now only display if the Profile2 module is active.
+
+1.0.5 (10/30/13)
+  *Fixed some issues related to the custom color option.
+  *Fixed missing Drupal links in node--article.tpl.
+  *Added breadcrumbs option.
+  *"Search" region changed to "Header Search", now properly utilized.
+  *Modified contact form mail label to fix issue on mobile devices.
+  *Added post meta theme settings.
+
+1.0.4 (10/21/13)
+  *Renamed "menu" region "header_menu" for block/region template specificity.
+  *Fixed apperance of mobile menu.
+  *Updated MegaSlider module to version 2.4.
+  *Fixed error with recent posts view block when thumbnail image is not uploaded.
+
+1.0.3 (09/20/13)
+  *Fixed appearance of portfolio node pagination when logged in.
+  *Updated appearance of Drupal tabs.
+  *Updated style of portfolio image slider.
+  *Applied theme styling to all submit buttons.
+  *Improvements to search results page.
+  *Fixed bug with Portfolio filter terms with more than one word.
+
+1.0.2 (09/18/13)
+  *Added theme setting to toggle black and white image effect.
+  *Removed restriction on sticky header for logged in users.
+  *Fixed a bug causing the Drupal contact form to not function properly. 
+  *Fixed search box permissions in demo install. 
+  *Removed margin from image post slider.
+  *Fixed bug where comment date was displaying the node date.
+  *Added support for detail box hover color.
+  *Updated documentation.
+  *Added theme PSD files to download content.
+
+1.0.1 (09/09/13)
+  *Fixed ul/li default styles.
+  *Fixed misconfigured blocks in demo content.
+  *Updated documentation.
+
+1.0 (09/05/13)
+  *Initial release.

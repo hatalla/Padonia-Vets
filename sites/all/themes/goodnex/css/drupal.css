@@ -1,0 +1,368 @@
+li ul, li ol {
+  margin:0;
+}
+
+ul, ol {
+  margin-left: 30px;
+}
+
+ul {
+  list-style-type:disc;
+}
+
+ol {
+  list-style-type:decimal;
+}
+
+.tabs-nav, 
+.testimonials, 
+.unstyled-list, 
+.social-icons, 
+nav ul, ul.clients-items, 
+.image-gallery-slider ul,
+.image-post-slider ul,
+.ajax-nav,
+.widget ul,
+.flickr-badge,
+.item-list ul,
+.features,
+.slides {
+	margin: 0;
+}
+
+.tabs-nav li, 
+.testimonials li, 
+.unstyled-list li, 
+ul.clients-items li,
+.social-icons li,
+.ajax-nav li,
+.widget ul li,
+.flickr-badge li,
+.item-list ul li,
+.ajax-content ul, 
+.features li {
+	list-style: none;
+}
+
+.content p a {
+  color: #b2b2b2;
+}
+
+.content p a:hover {
+  color: #8e8e8e;
+}
+
+.responsive-nav { width: 100%; }
+
+.link-wrapper {
+	float: right;
+}
+
+.breadcrumb {
+	padding-bottom: 0px;
+}
+
+#breadcrumbs {
+  clear: both;
+	padding: 0px 0px 0px 2px;
+	font-size: 15px;
+	font-family: "Open Sans";
+	font-weight: 300;
+}
+
+#breadcrumbs a {
+	color: #b2b2b2;
+}
+
+#contact-site-form label, #comment-form-wrapper label {
+	display: inline-block;
+}
+
+select.filter-list {
+	width: 100%;
+}
+
+.page-search #block-system-main .content {
+	margin-left: 10px;
+}
+
+.profile .user-picture {
+margin: 2em 0em 1em 0;
+}
+
+#search-form .container-inline label {
+	display: block;
+}
+
+.search-advanced {
+	margin: 20px 0px;
+}
+
+.search-results {
+	margin-left: 0px;
+}
+
+.search-results .search-snippet-info {
+  padding-left: 0;
+}
+
+.search-result {
+	border-bottom: 1px solid #ccc;
+}
+
+#google_map {
+	margin: 0px 10px 20px 10px;
+}
+
+header h1 {
+	margin-bottom: 0px;
+}
+
+#block-views-detail-boxes-block .content {
+	overflow: hidden;
+}
+
+.comments-content-wrap ol:first-of-type li {
+	border-top: none;
+}
+
+.comment-form input[type="text"] {
+	width: 50%;
+	float: left;
+	padding-left: 30px;
+}
+
+.contact-form input[type="text"] {
+	width: 70%;
+	float: left;
+	padding-left: 30px;
+}
+
+.filter-help {
+  float: none;
+  padding: 0;
+}
+
+.filter-wrapper .form-item, .filter-guidelines { 
+	padding: 0;
+}
+
+.filter-help a {
+	padding: 0px 20px 0px 0px;
+}
+
+.comment-form .form-item-name:before, .comment-form .form-item-subject:before, #comment-body-add-more-wrapper:before, .contact-form .form-item-name:before, .contact-form .form-item-mail:before, .contact-form .form-item-subject:before, .contact-form .form-item-message:before {
+	 display: inline-block;
+  color: #b4b4b4;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "FontAwesome";
+  font-size: 14px;
+  position: absolute;
+  padding: 4px 0px;
+  left: 20px;
+}
+
+.comment-form .form-actions input[type='submit'] {
+	margin-right: 10px;
+}
+
+.comment-form .form-textarea-wrapper {
+	width: 60%;
+}
+
+.comment-form .form-textarea-wrapper textarea {
+	padding-left: 30px;
+}
+
+.comment-form .form-item-name, .comment-form .form-item-subject, .contact-form .form-item-name, .contact-form .form-item-subject, .contact-form .form-item-mail {
+	margin-bottom: 15px !important;
+}
+
+.form-item-name label, .form-item-subject label, .form-item-mail label {
+	padding: 5px 0px 0px 5px;
+}
+
+.comment-form .form-item {
+	margin-bottom: 10px;
+}
+
+#comments .form-item-name:before, .contact-form .form-item-name:before { 
+	content: "\f007";
+}
+
+.contact-form .form-item-mail:before { 
+  content: "\f0e0";
+}
+
+#comments .form-item-subject:before, .contact-form .form-item-subject:before { 
+	content: "\f0e5";
+}
+
+#comment-body-add-more-wrapper:before, .contact-form .form-item-message:before {
+	content: "\f040";
+}
+
+#comment-body-add-more-wrapper .form-type-textarea label, .contact-form .form-item-message label {
+	display: none !important;
+}
+
+.contact-form input {
+  width: auto;
+  padding-left: 15px;
+}
+
+.item-list ul li, 
+.item-list ul { margin: 0; }
+
+#drupal_tabs {
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+
+#main #drupal_tabs {
+	margin-left: 0px;
+}
+
+.hidden {
+	display: none;
+}
+
+.md-slide-wrap {
+	margin-top: 20px;
+	margin-bottom: 45px;
+}
+
+.search-wrapper input[type="text"] {
+  height: 20px;
+}
+
+.search-wrapper .submit-search input[type="submit"] {
+  display: none;
+}
+
+.portfolio-controls {
+	margin-top: -105px;
+	position: absolute;
+	right: 10px;
+}
+
+.portfolio-controls-user {
+	margin-top: -165px;
+}
+
+.contextual-links-region {
+  overflow: hidden;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.entry-meta span {
+  font-size: 11px;
+  color: #b2b2b2;
+}
+
+.author span {
+	float: none;
+	display: inline;
+	margin-right: 0px;
+}
+
+.comment-date {
+	margin-right: 10px;
+  color: #b2b2b2;
+  font-size: 11px;
+}
+
+.indented {
+  margin-left: 70px;
+}
+
+.indented .comment {
+	border-top-width: 1px !important;
+  border-top-style: solid !important;
+  border-top-color: #ebebeb !important;
+}
+
+.comments-content-wrap {
+	margin-top: 10px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #ebebeb;
+}
+
+.comments-list {
+	border-bottom: none;
+	margin-bottom: 0px;
+}
+
+.comments-list .comment:first-child {
+  border-top-width: 1px;
+}
+
+input#edit-subject.form-text:before {
+	content: "\f007";
+}
+
+#footer h2 {
+	color: #ebebeb;
+  font-size: 14px;
+  font-weight: 600;
+  clear: both;
+}
+
+#footer .content {
+	overflow: auto;
+}
+
+.single-post-image li {
+	list-style: none;
+}
+
+#sidebar h2 {
+	margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#block-views-popular-tags-block {
+	margin-bottom: 45px !important;
+}
+
+.view-popular-tags .item-list ul li {
+  list-style: none;
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+.view-popular-tags a {
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;	
+	background-color: #676767 !important;
+  color: #d4d4d4 !important;
+  display: inline-block;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  padding: 5px;
+  font-size: 12px !important;
+}
+
+.view-popular-tags a:hover {
+  background-color: #c2c2c2 !important;
+	color: #383838 !important;
+}
+
+#after-content {
+	margin-top: 40px;
+}

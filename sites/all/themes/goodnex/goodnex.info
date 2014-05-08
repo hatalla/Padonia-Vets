@@ -1,0 +1,67 @@
+name = Goodnex
+description = Responsive Drupal 7 Theme. 
+core = 7.x
+engine = phptemplate
+version = 1.1
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/drupal.css
+stylesheets[all][] = css/skeleton.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = js/fancybox/jquery.fancybox-1.3.4.css
+stylesheets[all][] = js/flexslider/css/flexslider.css
+stylesheets[all][] = js/mediaelement/jquery.mediaelementplayer.css
+stylesheets[all][] = css/font-awesome.css
+
+scripts[] = js/jquery.modernizr.js
+scripts[] = js/jquery.easing.1.3.min.js
+scripts[] = js/jquery.cycle.all.min.js
+scripts[] = js/jquery.blackandwhite.min.js
+scripts[] = js/mediaelement/mediaelement-and-player.min.js
+scripts[] = js/jquery.jcarousel.min.js
+scripts[] = js/jquery.jflickrfeed.min.js
+scripts[] = js/jquery.touchswipe.min.js
+scripts[] = js/jquery.isotope.min.js
+scripts[] = js/mobile-map.js
+scripts[] = js/fancybox/jquery.fancybox-1.3.4.pack.js
+scripts[] = js/flexslider/js/jquery.flexslider-min.js
+scripts[] = js/config.js
+scripts[] = js/custom.js
+scripts[] = js/goodnex.js
+
+regions[header_left] = Header Left
+regions[header_right] = Header Right
+regions[header_menu] = Header Menu
+regions[header_search] = Header Search
+
+regions[before_content_no_wrap] = Before Content No Wrap
+regions[before_content] = Before Content
+regions[content] = Content
+regions[after_content] = After Content
+regions[after_content_no_wrap] = After Content No Wrap
+
+regions[sidebar_left] = Left Sidebar
+regions[sidebar_right] = Right Sidebar
+
+regions[footer_1] = Footer Box 1
+regions[footer_2] = Footer Box 2
+regions[footer_3] = Footer Box 3
+regions[footer_4] = Footer Box 4
+
+regions[footer_bottom] = Footer Bottom
+
+; Define theme setting defaults.
+settings[sticky_header] = 1
+settings[black_and_white] = 1
+settings[breadcrumbs] = 0
+settings[color_scheme] = color-1
+settings[skin_style] = normal
+settings[site_layout] = wide
+settings[body_backgrounds] = goodnex_backgrounds
+settings[background_select] = pattern-1
+settings[portfolio_columns] = four columns
+settings[meta_title] = 1
+settings[meta_date] = 1
+settings[meta_author] = 1
+settings[meta_tags] = 1
+settings[meta_comments] = 1

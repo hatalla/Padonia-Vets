@@ -1,0 +1,92 @@
+.form-item  {margin-top: 8px !important; margin-left: 10px !important;}
+
+.form-type-textfield input {width: 40% !important;}
+
+.fieldset-legend, .options_header {width: 100%;}
+
+#edit-heading-background-select {
+	color: transparent;
+	font-size: 30px;
+}
+
+label[for=edit-background-select-pattern-1] {
+	background-image: url('../images/patterns/pattern-1.png');
+}
+
+label[for=edit-background-select-pattern-2] {
+	background-image: url('../images/patterns/pattern-2.png');
+}
+
+label[for=edit-background-select-pattern-3] {
+	background-image: url('../images/patterns/pattern-3.png');
+}
+
+label[for=edit-background-select-pattern-4] {
+	background-image: url('../images/patterns/pattern-4.png');
+}
+
+label[for=edit-background-select-pattern-5] {
+	background-image: url('../images/patterns/pattern-5.png');
+}
+
+label[for=edit-background-select-pattern-6] {
+	background-image: url('../images/patterns/pattern-6.png');
+}
+
+label[for=edit-background-select-pattern-7] {
+	background-image: url('../images/patterns/pattern-7.png');
+}
+
+label[for=edit-background-select-pattern-8] {
+	background-image: url('../images/patterns/pattern-8.png');
+}
+
+label[for=edit-background-select-pattern-9] {
+	background-image: url('../images/patterns/pattern-9.png');
+}
+
+label[for=edit-background-select-pattern-10] {
+	background-image: url('../images/patterns/pattern-10.png');
+}
+
+label[for=edit-background-select-pattern-11] {
+	background-image: url('../images/patterns/pattern-11.png');
+}
+
+label[for=edit-background-select-pattern-12] {
+	background-image: url('../images/patterns/pattern-12.png');
+}
+
+label[for=edit-background-select-pattern-13] {
+	background-image: url('../images/patterns/pattern-13.png');
+}
+
+label[for=edit-background-select-pattern-14] {
+	background-image: url('../images/patterns/pattern-14.png');
+}
+
+label[for=edit-background-select-pattern-15] {
+	background-image: url('../images/patterns/pattern-15.png');
+}
+
+#edit-background-select {
+	color: transparent;
+	font-size: 50px;
+	padding-top: 20px;
+}
+
+.form-item-background-select {
+	max-width: 500px;
+}
+
+#edit-background-select .form-type-radio {
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+
+.form-wrapper {min-height: 20px;}
+
+.fieldset-legend {cursor: pointer;}
+
+

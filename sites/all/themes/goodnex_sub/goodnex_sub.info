@@ -1,0 +1,51 @@
+name = Goodnex sub
+description = A sub-theme of Goodnex. 
+core = 7.x
+engine = phptemplate
+
+base theme = goodnex
+
+; Call style sheets.
+stylesheets[all][] = css/custom.css
+
+regions[header_left] = Header Left
+regions[header_right] = Header Right
+regions[header_menu] = Header Menu
+regions[header_search] = Header Search
+
+regions[before_content_no_wrap] = Before Content No Wrap
+regions[before_content] = Before Content
+regions[content] = Content
+regions[after_content] = After Content
+regions[after_content_no_wrap] = After Content No Wrap
+
+regions[sidebar_left] = Left Sidebar
+regions[sidebar_right] = Right Sidebar
+
+regions[footer_1] = Footer Box 1
+regions[footer_2] = Footer Box 2
+regions[footer_3] = Footer Box 3
+regions[footer_4] = Footer Box 4
+
+regions[footer_bottom] = Footer Bottom
+
+; Define theme setting defaults.
+settings[sticky_header] = 1
+settings[black_and_white] = 1
+settings[breadcrumbs] = 0
+settings[color_scheme] = color-1
+settings[skin_style] = normal
+settings[site_layout] = wide
+settings[body_backgrounds] = goodnex_backgrounds
+settings[background_select] = pattern-1
+settings[portfolio_columns] = four columns
+settings[meta_title] = 1
+settings[meta_date] = 1
+settings[meta_author] = 1
+settings[meta_tags] = 1
+settings[meta_comments] = 1
+settings[meta_title] = 1
+settings[meta_date] = 1
+settings[meta_author] = 1
+settings[meta_tags] = 1
+settings[meta_comments] = 1

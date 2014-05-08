@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Goodnex Documentation</title>
+<link href="http://fonts.googleapis.com/css?family=Voces" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="style.css"/>
+<script src="jquery.js"></script>
+<script src="toc.js"></script>
+</head>
+<body>
+<div id="toc">
+	
+</div>
+
+
+<div id="wrapper">
+<h2>Overview</h2>
+<p>Goodnex is powerful and ultra-responsive theme which can perfectly serve any type of business, freelance or interactive creative sphere. For theme support that cannot be found in this documentation, please visit our <a href="http://refaktorthemes.com/support"> support forum</a>. 
+<p>Updated: 03/27/14<br>Author: <a href="http://refaktorthemes.com" target="_blank">Refaktor</a><br>Docs powered by: <a href="https://github.com/jgallen23/toc" target="_blank">TOC</a><br>Original design by <a href="http://themeforest.net/user/
+ThemeMakers" target="_blank">
+ThemeMakers</a></p>
+<h2>Installation</h2>
+<p>There are several ways Goodnex can be installed. For existing sites that already have content, the first method will only involve the installation and activation of the theme. The second option includes a full Drupal 7 install with the same SQL database file used to create the theme demo. Please choose which installation method works best for you and follow the instructions. We do highly recommend you perform the full install, especially if you plan on using the Commerce functionality.
+<h3>Theme Only</h3>
+Option 1:
+<ul>
+  <li>Visit yourdomain.com/admin/appearance/install</li>
+  <li>Upload the Goodnex.zip file</li>
+  <li>Enable and set to default</li>
+</ul>
+Option 2:
+<ul>
+  <li>Extract the Goodnex.zip file and upload via FTP to /sites/all/themes</li>
+  <li>Visit yourdomain.com/admin/appearance/</li>
+  <li>Scroll down to "DISABLED THEMES" and set and enable Goodnex</li>
+</ul>
+
+<h3>Full Drupal Install</h3>
+<p>The following steps are designed for people that have experience manually installing Drupal and importing databases. If you do not feel comfortable performing these steps yourself, contact your server administrator for help. <strong>NOTE</strong> this option is for a completely new Drupal install. Do not import the provided SQL file into an existing Drupal database or you will lose all of your data!</p>
+<ol>
+<li>Create a database for this installation of Drupal and import the SQL file that came with the theme.</li>
+<li>Follow <a href="http://drupal.org/documentation/install/settings-file" target="_blank"> these directions</a> to create the settings.php file. Save this file somewhere so you can copy it over to the Drupal installation we have provided.</li>
+<li>Copy the entire contents of the Drupal_7 folder to the location on your web server where you want your site to be accessed. If you want your primary domain to point to your install of Goodnex, copy everything to the root folder. If you want your site to be accessed as a subsection of your domain (for example: yourdomain.com/drupal) then simply rename the Drupal_7 folder to the desired name and upload to the root of your server. Also be sure to copy over the settings.php file mentioned in the previous step</li>
+<li>Login to your site with the username <strong>Steve</strong> and the password <strong>admin</strong> and visit /admin/people to change the admin username and password.</li>
+<li>Go through the Drupal configuration found in /admin/config options and update all the necessary information to reflect your website. Also be sure to visit /admin/config/media/file-system and change the Temporary Directory.</li>
+
+</ol>
+<h2>Goodnex Sub-Theme</h2>
+
+<p>Goodnex comes with a shell sub-theme called Goodnex_sub that you can use to make customizations to the style and template structure of the parent theme without having to modify the parent theme itself. This is useful if you plan on updating the parent theme as we release updates on ThemeForest. If you performed the full install you will already see Goodnex_sub in the list of themes available. If you did the standalone install you can find the Goodnex_sub.zip file in the root of the download files and you can install it like any other theme.</p>
+<p>There is an empty stylesheet already defined which is /css/custom.css (inside the Goodnex_sub folder). Use this file to add all of the custom CSS that you plan on using. You can also copy any template file from the /Goodnex/templates folder into the /Goodnex_sub/templates folder and it will listen to the sub-themes template file first. This will allow you to update the parent theme as we make updates without losing your customizations. Just pay attention to the changelog and compare the parent theme files with yours and make any adjustments as needed.</p>
+<p>You will need to configure the sub-themes theme settings separately from the parent theme's, so visit /admin/appearance/settings/Goodnex_sub to configure the theme settings for the sub-theme. You also need to configure the block regions separately.</p>
+</ol>  
+<h2>Menu</h2>
+<p>Goodnex has a block region called Menu which can be used to add any menu block you like. The demo simply uses the default Main Menu block but you can create a custom menu block if you like.</p>
+
+<img src="images/menu-2.png"><br/><br/>
+
+<p><strong>Note:</strong> make sure to check the "show as expanded" box on all parent items with children to ensure the dropdown menu works correctly.</p>
+
+
+<h2>Modules</h2>
+<p>You can find all of the modules used in the demo in the modules.zip archive in the root of the folder you downloaded from ThemeForest. Not all modules are required to use the theme, but below is a list of modules you will need to utilize various elements of the theme</p>
+
+<h4>General Required Modules</h4>
+<ul>
+<li><a href="http://drupal.org/project/ctools">ctools</a></li>
+<li><a href="http://drupal.org/project/views">Views</a></li>
+<li><a href="https://drupal.org/project/jquery_colorpicker">jQuery Colorpicker</a></li>
+</ul>
+
+<h4>Contact</h4>
+<ul>
+<li><a href="https://drupal.org/project/contact_form_blocks">Contact Form Blocks</a></li>
+</ul>
+
+<h3>Goodnex Content Data</h3>
+<p>If you used the "theme only" option to install the theme on an existing install that already has content we recommend you use our Goodnex Content Data module to create the additional content types, fields and Views needed to fully utilize the theme. You will find it in the root of the directory that contains the download files. This module is a custom <a href="http://drupal.org/project/features" target="_blank">Features</a> module and will not run without it. We recommend copying all of the modules from the /drupal_7/sites/all/modules folder into your install if you do not already have them. After you have all the modules simply upload and activate the Goodnex Content Data module and the content types, fields and Views will automatically be created.</p>
+
+<h2>Image Sliders</h2>
+<h4>Mega Slider</h4>
+<p>Goodnex includes the Drupal <a href="http://codecanyon.net/item/mega-slider/4313171" target="_blank">Mega Slider</a> module. This module offers an incredible number of options to create the exact slider to meet your needs. To begin configuring your slider visit /admin/structure/md-slider and press the "add new slider" link. You can find documentation for the slider inside the md_slider module folder and you can reference the video below.</p>
+
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/G2LW6RrjhvM" frameborder="0" allowfullscreen></iframe></p>
+
+<h4>Flexslider</h4>
+<p>Goodnex also supports a simple Flexslider image slider. See the Flexslider portion of the Custom Content Types documentation below for more information.</p>
+
+<h2>Front Page</h2>
+<p>The front page seen on the Goodnex demo consists of various block regions. Some are generated by modules (ie Mega Slider), others by Views, and some are custom blocks with special markup. Any custom markup in the /examples/elements.php file can be used to create additional content for your site.</p>
+
+<h2>Theme Settings</h2>
+<p>Visit /admin/appearance/settings/goodnex to configure your theme's settings. You can select your color scheme, add your own custom CSS, add your own custom logo, etc.</p>
+
+<h2>Custom Content Types</h2>
+
+<h4>Portfolio</h4>
+
+<img src="images/portfolio.png"><br/><br/>
+<p><strong>Fields:</strong></p>
+<ul>
+<li><strong>Image:</strong> The default Image field used for uploading the images.</li>
+<li><strong>Portfolio Category:</strong> This is a term reference field that is linked to a vocabulary created specifically for this content type.</li>
+<li><strong>Portfolio Slider:</strong> Use this field to upload images for the slider that is used on the single portfolio nodes.</li>
+</ul>
+
+<p><strong>Portfolio Block - Example: <a href="http://refaktorthemes.com/Goodnex/portfolio-4-columns" target="_blank"> http://refaktorthemes.com/Goodnex/portfolio-4-columns</a></strong></p>
+<p>This is the standard Portfolio style which utilizes the "Portfolio Block Page" View. If you are not using the full demo or did not use the Custom Content module you can use the code in /views_exports/portfolio-block.txt to import this View. Then simply place the "View: Portfolio Block" in the Content region and configure the block visibility settings to your liking.</p>
+<p><strong>Template files</strong></p>
+<ul>
+<li>/templates/node/node--portfolio.tpl.php</li>
+<li>/templates/field--field_portfolio_slider--portfolio.tpl.php</li>
+<li>/templates/node/node--view--portfolio--block.tpl.php</li>
+<li>/templates/views/views-view--portfolio-block.tpl.php</li>
+</ul>
+
+<h4>Portfolio Columns</h4>
+<p>To change the number of items appear in a row in the Portfolio block visit the theme settings (/admin/appearance/settings/Goodnex).</p>
+
+<h4>Related Projects:</h4>
+Goodnex also includes support for a "Recent Works" block that you can use to showcase additional Portfolio items on the single Portfolio node pages, or anywhere else you would like. If you are not using the full demo or did not use the Custom Content module you can use the code in /views_exports/recent-works.txt to import this View. Then simply place the "View: Recent Works" in the Content region and configure the block visibility settings to your liking.</p>
+<p><strong>Template files</strong></p>
+<ul>
+<li>/templates/node/node--view--recent-works--block.tpl.php</li>
+<li>/templates/views/views-view--recent-works.tpl.php</li>
+</ul>
+
+<h4>Portfolio Filters:</h4>
+<p>The Portfolio includes support for an Isotope filter effect powered by Taxonomy terms. To utilize this effect visit /admin/structure/taxonomy and create a new vocabulary (example: Portfolio). After creating your vocabulary you can create the terms you wish to use to categorize your portfolio items. This taxonomy vocabulary can be linked to the Portfolio content type via a term reference field so you can select the category or categories you want to place your items into.</p>
+
+<p>The filters are powered by a View called Portfolio Filters that is placed in the View header as a global view area. If you don't already have this view you can use the code in /views_exports/portfolio-filters.txt to import as a View for placement in the View header of the Portfolio view.</p>
+
+<p><strong>Template files</strong></p>
+<ul>
+<li>/templates/views/views-view-list--portfolio-filters.tpl.php</li>
+<li>/templates/views/views-view-fields--portfolio-filters.tpl.php</li>
+</ul>
+
+<h4>FAQ</h4>
+<img src="images/faq.png"><br/><br/>
+
+<p><strong>Fields:</strong></p>
+<ul>
+<li>Active: This is a simple boolean field type used to set whether or not the FAQ item is open or "active" by default.</li>
+</ul>
+
+<p><strong>Template files</strong></p>
+<ul>
+<li>/templates/node/node--faq.tpl.php</li>
+<li>/templates/views/views-view--faq.tpl.php</li>
+<li>/templates/views/views-view-unformatted--faq.tpl.php</li>
+</ul>
+
+<p>The export code /views-exports/faq.txt can be used to create the FAQ View which uses a Block display. This block can then be added to the region of your choice.</p>
+
+<h4>Flexslider</h4>
+<img src="images/flexslider.png"><br/><br/>
+
+<p><strong>Fields:</strong></p>
+<ul>
+<li><strong>Image:</strong> The default Image field used for uploading the images.</li>
+<li><strong>URL:</strong> Use this field to link your slide to a URL.</li>
+<li><strong>Caption:</strong> Use this field to add a caption to your slide.</li>
+</ul>
+
+<p><strong>Template files</strong></p>
+<ul>
+<li>/templates/node/node--flexslider.tpl.php</li>
+<li>/templates/views/views-view--flexslider.tpl.php</li>
+<li>/templates/views/views-view-unformatted--flexslider.tpl.php</li>
+</ul>
+
+<p>The export code /views-exports/flexslider.txt can be used to create the Flexslider View which uses a Block display. This block can then be added to the region of your choice.</p>
+
+<h4>Details Box</h4>
+<img src="images/details.png"><br/><br/>
+
+<p><strong>Fields:</strong></p>
+<ul>
+<li><strong>Detail Icon:</strong> The text class of the icon you want to use (see Icons section below for full list).</li>
+<li><strong>Detail Caption:</strong> The title caption you wish to use with your detail box.</li>
+<li><strong>Detail Info:</strong> A longer text description for your detail box.</li>
+<li><strong>Detail Color:</strong> If you wish to select a color for your box use the color picker.</li>
+<li><strong>Detail Color Type:</strong> Select list field for selecting the placement of the color if the "Detail Color" field is used. Use "Background" and "Hover" as the two options.</li>
+<li><strong>Detail URL:</strong> Add an optional URL for your detail box.</li>
+</ul>
+
+<p><strong>Template files</strong></p>
+<ul>
+<li>/templates/node/node--detail-box.tpl.php</li>
+<li>/templates/views/views-view--detail-boxes.tpl.php</li>
+<li>/templates/views/views-view-unformatted--detail-boxes.tpl.php</li>
+</ul>
+
+<p><strong>Icons:</strong></p>
+<ul>
+  <li>.icons-app				</li>
+  <li>.icons-shuffle			</li>
+  <li>.icons-monitor			</li>
+  <li>.icons-magnifying		</li>
+  <li>.icons-mail				</li>
+  <li>.icons-users			</li>
+  <li>.icons-present			</li>
+  <li>.icons-download			</li>
+  <li>.icons-upload		</li>
+  <li>.icons-in-tray		</li>
+  <li>.icons-cat				</li>
+  <li>.icons-cog				</li>
+  <li>.icons-polaroid			</li>
+  <li>.icons-electricity		</li>
+  <li>.icons-lightbulb		</li>
+  <li>.icons-graph-up			</li>
+  <li>.icons-pie-chart		</li>
+  <li>.icons-bar-chart		</li>
+  <li>.icons-disc-graph	</li>
+  <li>.icons-screwdriver		</li>
+  <li>.icons-sun				</li>
+  <li>.icons-coffee-cup		</li>
+  <li>.icons-shamrock			</li>
+  <li>.icons-target			</li>
+  <li>.icons-life-ring		</li>
+  <li>.icons-puzzle			</li>
+  <li>.icons-umbrella			</li>
+  <li>.icons-bomb				</li>
+  <li>.icons-speech-bubble	</li>
+  <li>.icons-link				</li>
+  <li>.icons-alarm-clock		</li>
+  <li>.icons-thumbs-up		</li>
+  <li>.icons-thumbs-down		</li>
+  <li>.icons-tick-circle		</li>
+  <li>.icons-cross-circle		</li>
+  <li>.icons-arrow			</li>
+  <li>.icons-heart			</li>
+  <li>.icons-wallet			</li>
+  <li>.icons-tick				</li>
+  <li>.icons-paint-brush		</li>
+  <li>.icons-network			</li>
+  <li>.icons-layout			</li>
+  <li>.icons-megaphone		</li>
+  <li>.icons-book				</li>
+  <li>.icons-calendar			</li>
+  <li>.icons-refresh			</li>
+  <li>.icons-earth			</li>
+  <li>.icons-house</li>
+</ul>
+
+<p>The export code /views-exports/detail-boxes.txt can be used to create the Detail Boxes View which uses a Block display. This block can then be added to the region of your choice.</p>
+
+<h4>AJAX Navigation</h4>
+
+<p>Example: <a href="http://refaktorthemes.com/goodnex/left-navigation" target="_blank">http://refaktorthemes.com/goodnex/left-navigation</a></p>
+
+<p><strong>Template files</strong></p>
+<ul>
+<li>/templates/node/node--view--ajax-content--block.tpl.php</li>
+<li>/templates/node/node--view--ajax-navigation--block.tpl.php</li>
+<li>/templates/views/views-view--ajax-content.tpl.php</li>
+<li>/templates/views/views-view--ajax-navigation.tpl.php</li>
+<li>/templates/views/views-view-unformatted--ajax-content.tpl.php</li>
+<li>/templates/views/views-view-unformatted--ajax-navigation.tpl.php</li>
+</ul>
+
+<p>The export code /views-exports/ajax-content.txt and /views-exports/ajax-navigation.txt can be used to create the Views. The Navigation block goes into the header of the content View as a global view region. The content block can then be added to the region of your choice.</p>
+
+<h2>Blog (posts)</h2>
+<p>The Goodnex demo uses a View to display the article content type nodes. If you do not already have this View using one of our different installation methods you can use the code found in /views-exports/blog.txt to import the View and all its settings. To change the style of image on that View page you can use the Blog View Image option in the theme settings (/admin/appearance/settings/goodnex).</p>
+<h4>Author bio</h4>
+<p>To display a small author bio on the article node page, install the <a href="https://drupal.org/project/profile2" target="_blank">Profile2 module</a> and follow these steps to configure it:</p>
+<ol>
+<li>Visit /admin/structure/profiles and create a new profile type called "main". If this already exists skip to the next step.</li>
+<li>Add a field to that profile called "Bio". If this exists skip to the next step.</li>
+<li>Visit /admin/people and edit your user. Then click on the "Main Profile" tab in the top right corner next to the "Account" link to add your author bio.</li>
+</ol>
+
+<h2>Block Regions</h2>
+<p>Goodnex features 16 block regions where you can add your own custom content. Visit yourdomain.com/admin/structure/block to add your own content to the defined block regions. Press "Add Block" to create a new custom blog, or select an existing block from the Disabled list below the defined block regions.</p>
+<h4>Header Block Regions</h4>
+<p>Goodnex features four header regions: Header Left, Header Right, Menu and Search. You can use the "demonstrate block regions" link on /admin/structure/block to see exactly where these are located, but the names are fairly self explanatory. If you would like to mimic the social icon region seen above the menu on the demo you can use the following markup in a block:</p>
+<pre>
+&lt;div class=&quot;widget widget_contacts&quot;&gt;
+
+	&lt;div class=&quot;vcard clearfix&quot;&gt;
+
+		&lt;p class=&quot;top-phone&quot;&gt;Call Us : &lt;span&gt;+00 123456789&lt;/span&gt;&lt;/p&gt;
+
+	&lt;/div&gt;&lt;!--/ .vcard--&gt;
+
+	&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+	
+	&lt;ul class=&quot;social-icons&quot;&gt;
+		&lt;li class=&quot;twitter&quot;&gt;&lt;a href=&quot;#&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;facebook&quot;&gt;&lt;a href=&quot;#&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;dribble&quot;&gt;&lt;a href=&quot;#&quot;&gt;Dribble&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;vimeo&quot;&gt;&lt;a href=&quot;#&quot;&gt;Vimeo&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;youtube&quot;&gt;&lt;a href=&quot;#&quot;&gt;Youtube&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;rss&quot;&gt;&lt;a href=&quot;#&quot;&gt;Rss&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;&lt;!--/ .social-icons --&gt;	
+
+&lt;/div&gt;
+</pre>
+
+<h4>Content Block Regions</h4>
+<p>Goodnex has a total of 5 content block regions: Before Content, Content, Sidebar Left, Sidebar Right and After Content. Like the Header regions described above these regions are fairly self explanatory. One thing to note is that the before and after content regions are called outside of the main content wrap so you can use completely full width content (like the Image Slider) or use your own custom wrappers. Those regions are there to do whatever you like with and are not restricted by any additional markup.</p>
+
+<h4>Footer Block Regions</h4>
+<p>Finally there are 6 footer block regions available, four individual four column regions and two additional six column regions below. </p>
+
+<h2>Shortcodes</h2>
+<p>For a full example of all the different shortcodes you can use refer to the Elements page in the demo content, or the examples/elements.php file in the root of the Goodnex theme folder.</p>
+<h4>Tabs</h4>
+<pre>
+&lt;div class=&quot;content-tabs&quot;&gt;
+
+	&lt;ul class=&quot;tabs-nav clearfix&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;#tab1&quot;&gt;Clean&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#tab2&quot;&gt;Easy&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#tab3&quot;&gt;Support&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;&lt;!--/ .tabs-nav--&gt;
+
+	&lt;div class=&quot;tabs-container&quot;&gt;
+
+		&lt;div class=&quot;tab-content&quot; id=&quot;tab1&quot;&gt;
+			
+			&lt;h3&gt;Unique &amp; Clean Design&lt;/h3&gt;
+
+			&lt;p&gt;
+				Nulla sollicitudin tincidunt dui et egestas. Phasellus non sem elementum, ullamcorper metus vitae, accumsan dui. Duis dignissim condimentum lorem. 
+				Maecenas facilisis ipsum sed porttitor rutrum. Integer consequat semper elit sed viverra.
+			&lt;/p&gt;
+
+		&lt;/div&gt;&lt;!--/ .tab-content --&gt;
+
+		&lt;div class=&quot;tab-content&quot; id=&quot;tab2&quot;&gt;
+			
+			&lt;h3&gt;Easy to Customize&lt;/h3&gt;
+
+			&lt;p&gt;
+				Phasellus tincidunt consequat neque, in pharetra mauris ultricies nec. 
+				Curabitur dapibus, velit id lacinia scelerisque, ipsum mi mattis nunc, 
+				id vehicula sapien enim quis ante. Nulla non mauris vel neque gravida 
+				sollicitudin. 
+			&lt;/p&gt;
+
+		&lt;/div&gt;&lt;!--/ .tab-content --&gt;
+
+		&lt;div class=&quot;tab-content&quot; id=&quot;tab3&quot;&gt;
+
+			&lt;h3&gt;Free Support &amp; Updates&lt;/h3&gt;
+			
+			&lt;p&gt;
+				Nulla sollicitudin tincidunt dui et egestas. Phasellus non sem elementum, 
+				ullamcorper metus vitae, accumsan dui. Duis dignissim condimentum lorem. 
+				Maecenas facilisis ipsum sed porttitor rutrum. Integer consequat semper
+				elit sed viverra.
+			&lt;/p&gt;
+
+		&lt;/div&gt;&lt;!--/ .tab-content --&gt;
+
+	&lt;/div&gt;&lt;!-- .tabs-container --&gt;	
+
+&lt;/div&gt;&lt;!--/ .content tabs --&gt;
+</pre>
+
+<h4>Quote Box</h4>
+<pre>
+&lt;div class=&quot;quote-box&quot;&gt;
+	
+	&lt;ul class=&quot;testimonials&quot;&gt;
+
+		&lt;li&gt;
+			&lt;div class=&quot;quote-text&quot;&gt;
+				Lorem ipsum dolor sit amet, consectetur aipisc ing elit. Nulla iaculis 
+				aliquet augue, varius purus sollicitudin eget. Donec tellus sollicitudin
+				eu congue tempor dapibus et metus. Fusce ac ipsum at magna accumsan
+				scelerisque sedon dolor.
+			&lt;/div&gt;
+			&lt;div class=&quot;quote-author&quot;&gt;&lt;b&gt;Sandra Brown,&lt;/b&gt; Manager&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;div class=&quot;quote-text&quot;&gt;
+				Lorem ipsum dolor sit amet, consectetur aipisc ing elit. 
+				Nulla iaculis aliquet augue, varius purus sollicitudin eget.
+			&lt;/div&gt;
+			&lt;div class=&quot;quote-author&quot;&gt;&lt;b&gt;Sandra Brown,&lt;/b&gt; Manager&lt;/div&gt;
+		&lt;/li&gt;
+
+	&lt;/ul&gt;	
+	
+&lt;/div&gt;&lt;!--/ .quote-box--&gt;	
+</pre>
+
+<h2>Extras</h2>
+<h4>Code Examples</h4>
+<p>We've included some code examples inside the /examples folder in the root of the theme with some markup used on several of the demo page templates.</p>
+<h4>Flickr Feed</h4>
+<p>The following markup can be used to generate a Flickr Feed anywhere on your site:</p>
+<pre>
+&lt;ul class=&quot;flickr-badge clearfix&quot;&gt;&lt;/ul&gt;
+
+&lt;script&gt;
+	jQuery(document).ready(function ($) {
+		$('ul.flickr-badge').jflickrfeed({
+
+		limit: 6, // Max 9
+		qstrings: {id : '54958895@N06'}, // ID
+		itemTemplate: '&lt;li&gt;&lt;a class=&quot;badge single-image plus-icon&quot; target=&quot;_blank&quot; href=&quot;{{image_b}}&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;{{image_s}}&quot; alt=&quot;{{title}}&quot; /&gt;&lt;/a&gt;&lt;/li&gt;'
+	  });
+	  
+	});
+&lt;/script&gt;
+</pre>
+
+<h2>Thank You</h2>
+<p>Thank you very much for purchasing the Goodnex Responsive Drupal 7 theme. Once again if you have any issues or feedback please connect via the <a href="http://themeforest.net/user/refaktor#from" target="_blank">ThemeForest author page</a>. Enjoy using Goodnex!</p>
+</p>&copy 2014 Refaktor.
+</div>
+<script>$('#toc').toc();</script></body></html>
