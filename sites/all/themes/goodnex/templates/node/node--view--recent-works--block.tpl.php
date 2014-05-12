@@ -8,6 +8,14 @@
 	<?php endif; ?>			
 	<a href="<?php echo $node_url; ?>" class="project-meta">
 		<h6 class="title"><?php echo $title; ?></h6>
-		<span class="categories"><?php print str_replace(' ', ' / ', strip_tags(render($content['field_portfolio_category']))); ?></span>	
+		<?php
+			$search = array(' ', '-');
+			$replace = array(' / ', ' ');
+			$cat = str_replace($search, $replace, strip_tags(render($content['field_portfolio_category'])));
+			$replacement = " ";
+		?>
+		<!--<span class="categories"><?php print str_replace(' ', ' / ', strip_tags(render($content['field_portfolio_category']))); ?></span>  -->
+		<span class="categories"><?php print substr($cat, 0, -2).$replacement; ?></span>	
 	</a>
 </li>
+

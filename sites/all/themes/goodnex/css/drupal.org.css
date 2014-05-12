@@ -151,8 +151,9 @@ header h1 {
 	padding: 0px 20px 0px 0px;
 }
 
+
 .comment-form .form-item-name:before, .comment-form .form-item-subject:before, #comment-body-add-more-wrapper:before, .contact-form .form-item-name:before, .contact-form .form-item-mail:before, .contact-form .form-item-subject:before, .contact-form .form-item-message:before {
-  display: inline-block;
+	 display: inline-block;
   color: #b4b4b4;
   font-weight: normal;
   font-style: normal;
