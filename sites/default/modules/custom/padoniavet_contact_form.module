@@ -1,0 +1,30 @@
+<?php
+/**
+* Implements hook_form_contact_site_form_alter().
+* This function will add a phone number field to the site-wide contact form,
+* by implementing hook_form_FORM_ID_alter().  $form_id) {
+*/
+	function padonia_form_contact_site_form_alter(&$form, &$form_state) {
+	// Add a phone number field to the contact form.
+	$form['phone'] = array(
+	'#type' => 'textfield',
+	'#maxlength' => 20,
+	'#title' => t('Your phone'),
+	);
+
+	// Define the order of the top level elements on the form (include those from contact_site_form().
+	$order = array(
+		'name', 
+		'mail',
+		'phone',
+		'subject',
+		'cid',
+		'message',
+		'copy',
+		'actions');
+
+	// Order the elements by changing their #weight property.
+	foreach($order as $key => $field) {
+		$form[$field]['#weight'] = $key;
+	}
+}
