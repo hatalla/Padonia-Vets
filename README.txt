@@ -1,4 +1,4 @@
-Padoniavets.com
+
 CONTENTS OF THIS FILE
 ---------------------
 
